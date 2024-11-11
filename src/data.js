@@ -25,7 +25,7 @@ const projects = [
     title: "Portfolio Website",
     image: PortfolioImage,
     description:
-      "A personal portfolio website showcasing my projects, skills, and experience. Built with React, it features a responsive design, smooth navigation, and dynamic content rendering. The website highlights my journey as a developer, providing an interactive way for visitors to learn about my work and get in touch.",
+      "A personal portfolio website built with React to showcase my projects, skills, and experience. It features responsive design, smooth navigation, and dynamic content, offering an interactive way for visitors to learn about my developer journey and get in touch.",
     githubLink: "https://github.com/Tanex05/react-portfolio",
     technologies: ["React", "CSS", "HTML", "JavaScript"],
   },
