@@ -1,0 +1,61 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 20px 0;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: "Arial", sans-serif;
+}
+
+.navList {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navLink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #444, #666);
+  transition: color 0.4s ease, background-position 0.5s ease,
+    transform 0.3s ease;
+  text-transform: uppercase;
+}
+
+.navLink:hover {
+  color: #222;
+  background: linear-gradient(90deg, #ff6f00, #ff8f00);
+  background-position: 100%;
+  transform: scale(1.05);
+}
+
+.navLink:focus,
+.navLink:active {
+  background: #ff6f00;
+  color: #222;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+}
+
+section {
+  scroll-margin-top: 80px;
+}

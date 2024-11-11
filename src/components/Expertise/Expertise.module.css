@@ -1,0 +1,58 @@
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100vh; /* Changed from height to min-height */
+  margin-bottom: 100px; /* Added bottom margin */
+}
+
+.container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+  color: var(--text-color);
+}
+
+/* Card grid styling */
+.skillsList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns on larger screens */
+  gap: 60px;
+  justify-items: center;
+}
+
+/* Media query adjustments for responsive layout */
+@media (max-width: 1024px) {
+  .skillsList {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skillsList {
+    grid-template-columns: 1fr; /* 1 column on smaller mobile screens */
+    gap: 30px;
+  }
+
+  .container {
+    padding: 1.5rem; /* Increased padding to avoid overlap */
+    margin-bottom: 150px; /* Additional bottom margin to prevent overlap */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem; /* Compact padding for extra small screens */
+    margin-bottom: 200px; /* Extra bottom margin for smaller screens */
+  }
+
+  .container h1 {
+    font-size: 2rem; /* Smaller heading on extra small screens */
+    margin-bottom: 2rem;
+  }
+
+  .skillsList {
+    gap: 20px; /* Reduce gap on extra small screens */
+  }
+}
