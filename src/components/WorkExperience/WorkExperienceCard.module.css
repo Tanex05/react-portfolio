@@ -11,7 +11,6 @@
   text-align: center;
 }
 
-/* Hover effect for desktop only */
 @media (min-width: 768px) {
   .workExperienceCard:hover {
     transform: translateY(-10px);
@@ -58,7 +57,7 @@
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Evenly distribute tech buttons */
+  justify-content: space-between;
   gap: 8px;
   width: 100%;
 }
@@ -78,12 +77,13 @@
 @media (max-width: 768px) {
   .workExperienceCard {
     padding: 10px;
-    margin: 0 auto;
+    margin-bottom: 20px;
   }
 
   .companyImage {
-    width: 60%;
-    height: 120px;
+    width: 50%;
+    height: 100px;
+    border-radius: 180px;
   }
 
   .description {
@@ -91,11 +91,13 @@
   }
 
   .technologies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 5px;
   }
 
   .techButton {
-    font-size: 0.7rem;
+    font-size: 14px;
     padding: 4px 8px;
   }
 }
